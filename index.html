@@ -2,33 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Leonard Boma - Full Stack Web Developer Portfolio. Specializing in creating exceptional digital experiences with clean, efficient code.">
+    <meta name="keywords" content="web developer, full stack developer, portfolio, Leonard Boma, frontend developer, backend developer">
+    <meta name="author" content="Leonard Boma">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Leonard Boma | Web Developer Portfolio">
+    <meta property="og:description" content="Full Stack Web Developer specializing in creating exceptional digital experiences with clean, efficient code.">
+    <meta property="og:image" content="Assets/Profile-pic.jpg">
+    <meta property="og:url" content="https://your-portfolio-url.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Leonard Boma | Web Developer Portfolio">
+    <meta name="twitter:description" content="Full Stack Web Developer specializing in creating exceptional digital experiences with clean, efficient code.">
+    <meta name="twitter:image" content="Assets/Profile-pic.jpg">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leonard Boma | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="galaxy-effects.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="progress-indicator">
+        <div class="progress-bar"></div>
+    </div>
+
+    <div class="space-background">
+        <div class="stars"></div>
+        <div class="galaxy">
+            <div class="galaxy-arm"></div>
+        </div>
+        <div class="cyber-grid"></div>
+    </div>
+    
+    <!-- Static floating objects -->
+    <div class="floating-object floating-cube" style="--size: 40px; --duration: 15s; --delay: 0s; --float-y: -30px; --float-x: 20px; --float-x-alt: 40px; --float-y-alt: 30px; --rotate-x: 360deg; --rotate-y: 180deg; --rotate-z: 90deg;"></div>
+    <div class="floating-object floating-sphere" style="--size: 30px; --duration: 20s; --delay: 2s; --float-y: -40px; --float-x: -30px; --float-x-alt: 30px; --float-y-alt: 40px; --rotate-x: 180deg; --rotate-y: 360deg; --rotate-z: 45deg;"></div>
+    <div class="floating-object floating-tetrahedron" style="--size: 35px; --duration: 25s; --delay: 4s; --float-y: -50px; --float-x: 40px; --float-x-alt: -40px; --float-y-alt: 50px; --rotate-x: 270deg; --rotate-y: 90deg; --rotate-z: 180deg;"></div>
+    
+    <!-- Static dust particles -->
+    <div class="dust-particle" style="--duration: 15s; --delay: 0s; --drift: 50px;"></div>
+    <div class="dust-particle" style="--duration: 20s; --delay: 5s; --drift: -30px;"></div>
+    <div class="dust-particle" style="--duration: 25s; --delay: 10s; --drift: 70px;"></div>
+
     <nav class="navbar">
         <div class="logo">LB</div>
+        <input type="checkbox" id="mobile-nav-toggle" class="mobile-nav-toggle">
+        <label for="mobile-nav-toggle" class="mobile-nav-label">
+            <i class="fas fa-bars"></i>
+        </label>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <div class="theme-toggle">
-            <i class="fas fa-moon"></i>
-        </div>
     </nav>
 
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Hello, I'm <span class="highlight">Leonard Boma</span></h1>
-                <h2>Full Stack Web Developer</h2>
+                <div class="dynamic-text-container">
+                    <h2 class="dynamic-text">
+                        <span class="text-item">Full Stack Web Developer</span>
+                        <span class="text-item">Tech Enthusiast</span>
+                        <span class="text-item">Life Long Learner</span>
+                    </h2>
+                </div>
                 <p>I build exceptional digital experiences with clean, efficient code.</p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn primary-btn">View My Work</a>
@@ -37,14 +86,12 @@
             </div>
             <div class="hero-image">
                 <div class="image-container">
-                    <!-- Placeholder for profile image -->
-                    <div class="profile-image"></div>
+                    <img src="Assets/Profile-pic.jpg" alt="Leonard Boma Profile Picture">
                 </div>
                 <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-codepen"></i></a>
+                    <a href="https://github.com/Tweenwrld" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/leonard-boma-631aa9234/?originalSubdomain=ke" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/Tweenhaven35" target="_blank" class="social-icon"><i class="fab fa-x"></i></a>
                 </div>
             </div>
         </div>
@@ -55,45 +102,53 @@
     </section>
 
     <section id="about" class="about">
+        <div class="floating-object floating-cube" style="--size: 45px; --duration: 20s; --delay: 1s; --float-y: -20px; --float-x: 10px; --float-x-alt: 30px; --float-y-alt: 20px; --rotate-x: 270deg; --rotate-y: 180deg; --rotate-z: 45deg;"></div>
+        <div class="floating-object floating-sphere" style="--size: 40px; --duration: 25s; --delay: 3s; --float-y: -30px; --float-x: -20px; --float-x-alt: 20px; --float-y-alt: 30px; --rotate-x: 180deg; --rotate-y: 360deg; --rotate-z: 90deg;"></div>
+        <div class="floating-object floating-tetrahedron" style="--size: 50px; --duration: 22s; --delay: 5s; --float-y: -25px; --float-x: 15px; --float-x-alt: 25px; --float-y-alt: 25px; --rotate-x: 360deg; --rotate-y: 270deg; --rotate-z: 180deg;"></div>
+        <div class="dust-particle" style="--duration: 20s; --delay: 2s; --drift: 40px;"></div>
+        <div class="dust-particle" style="--duration: 25s; --delay: 4s; --drift: -30px;"></div>
+        <div class="cyber-grid"></div>
         <div class="section-header">
             <h2>About <span class="highlight">Me</span></h2>
             <div class="underline"></div>
         </div>
         <div class="about-content">
             <div class="about-text">
-                <p>Hi there! I'm Leonard, a passionate full-stack developer with a keen eye for design and a love for creating seamless user experiences. With 2+ years of experience in web development, I specialize in building responsive, accessible, and performance-optimized web applications.</p>
+                <p>Hi there! I'm Leonard, a passionate tech enthusiast interested in full-stack development with a love for creating seamless user experiences. With 1+ years of experience in web development, I am specializing in building responsive, accessible, and performance-optimized web applications.</p>
                 <p>My approach combines technical excellence with creative problem-solving. I believe in writing clean, maintainable code and staying current with emerging technologies and best practices.</p>
                 <p>When I'm not coding, you can find me exploring classical literature, experimenting with new recipes, or interacting with new tech stacks. I'm constantly learning and pushing myself to grow both personally and professionally.</p>
                 <div class="interests">
                     <h3>My Interests</h3>
                     <ul class="interest-list">
                         <li><i class="fas fa-laptop-code"></i> Web Development</li>
-                        <li><i class="fas fa-mobile-alt"></i> Mobile App Design</li>
-                        <li><i class="fas fa-database"></i> Database Architecture</li>
-                        <li><i class="fas fa-server"></i> Cloud Solutions</li>
-                        <li><i class="fas fa-robot"></i> Machine Learning</li>
-                        <li><i class="fas fa-hiking"></i> Outdoor Adventures</li>
+                        <li><i class="fas fa-mobile-alt"></i> Mobile App Designs</li>
+                        <li><i class="fas fa-database"></i> Finding new technologies</li>
+                        <li><i class="fas fa-server"></i> Database and Cloud Solutions</li>
+                        <li><i class="fas fa-robot"></i> AI Architecture Engineering</li>
+                        <li><i class="fas fa-hiking"></i> Reading, mostly non-fiction books</li>
                     </ul>
                 </div>
             </div>
             <div class="about-stats">
                 <div class="stat">
-                    <div class="stat-number">2+</div>
+                    <div class="stat-number">1+</div>
                     <div class="stat-label">Years Experience</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">7+</div>
+                    <div class="stat-number">3+</div>
                     <div class="stat-label">Projects Completed</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">Happy Clients</div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="skills" class="skills">
+        <div class="floating-object floating-tetrahedron" style="--size: 55px; --duration: 22s; --delay: 2s; --float-y: -25px; --float-x: 15px; --float-x-alt: 25px; --float-y-alt: 25px; --rotate-x: 360deg; --rotate-y: 270deg; --rotate-z: 180deg;"></div>
+        <div class="floating-object floating-cube" style="--size: 48px; --duration: 18s; --delay: 4s; --float-y: -35px; --float-x: -15px; --float-x-alt: 35px; --float-y-alt: 35px; --rotate-x: 180deg; --rotate-y: 90deg; --rotate-z: 45deg;"></div>
+        <div class="floating-object floating-sphere" style="--size: 42px; --duration: 24s; --delay: 6s; --float-y: -30px; --float-x: 20px; --float-x-alt: 30px; --float-y-alt: 30px; --rotate-x: 270deg; --rotate-y: 180deg; --rotate-z: 90deg;"></div>
+        <div class="dust-particle" style="--duration: 25s; --delay: 1s; --drift: -30px;"></div>
+        <div class="dust-particle" style="--duration: 22s; --delay: 3s; --drift: 35px;"></div>
+        <div class="cyber-grid"></div>
         <div class="section-header">
             <h2>My <span class="highlight">Skills</span></h2>
             <div class="underline"></div>
@@ -126,7 +181,7 @@
                         </div>
                         <h4>JavaScript</h4>
                         <div class="skill-level">
-                            <div class="skill-progress" style="width: 85%"></div>
+                            <div class="skill-progress" style="width: 65%"></div>
                         </div>
                     </div>
                     <div class="skill-card">
@@ -135,7 +190,7 @@
                         </div>
                         <h4>React</h4>
                         <div class="skill-level">
-                            <div class="skill-progress" style="width: 80%"></div>
+                            <div class="skill-progress" style="width: 60%"></div>
                         </div>
                     </div>
                 </div>
@@ -149,7 +204,7 @@
                         </div>
                         <h4>Node.js</h4>
                         <div class="skill-level">
-                            <div class="skill-progress" style="width: 85%"></div>
+                            <div class="skill-progress" style="width: 65%"></div>
                         </div>
                     </div>
                     <div class="skill-card">
@@ -176,7 +231,7 @@
                         </div>
                         <h4>SQL</h4>
                         <div class="skill-level">
-                            <div class="skill-progress" style="width: 80%"></div>
+                            <div class="skill-progress" style="width: 70%"></div>
                         </div>
                     </div>
                 </div>
@@ -194,12 +249,21 @@
                         </div>
                     </div>
                     <div class="skill-card">
+                        <div class="skill-icon scada-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>SCADA Systems</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
                         <div class="skill-icon docker-icon">
                             <i class="fab fa-docker"></i>
                         </div>
                         <h4>Docker</h4>
                         <div class="skill-level">
-                            <div class="skill-progress" style="width: 75%"></div>
+                            <div class="skill-progress" style="width: 55%"></div>
                         </div>
                     </div>
                     <div class="skill-card">
@@ -208,7 +272,7 @@
                         </div>
                         <h4>AWS</h4>
                         <div class="skill-level">
-                            <div class="skill-progress" style="width: 70%"></div>
+                            <div class="skill-progress" style="width: 40%"></div>
                         </div>
                     </div>
                     <div class="skill-card">
@@ -217,7 +281,7 @@
                         </div>
                         <h4>Figma</h4>
                         <div class="skill-level">
-                            <div class="skill-progress" style="width: 85%"></div>
+                            <div class="skill-progress" style="width: 45%"></div>
                         </div>
                     </div>
                 </div>
@@ -226,6 +290,20 @@
     </section>
 
     <section id="education" class="education">
+        <div class="floating-object floating-sphere" style="--size: 52px; --duration: 24s; --delay: 3s; --float-y: -28px; --float-x: 12px; --float-x-alt: 28px; --float-y-alt: 28px; --rotate-x: 270deg; --rotate-y: 180deg; --rotate-z: 90deg;"></div>
+        <div class="floating-object floating-tetrahedron" style="--size: 46px; --duration: 20s; --delay: 5s; --float-y: -32px; --float-x: -18px; --float-x-alt: 32px; --float-y-alt: 32px; --rotate-x: 360deg; --rotate-y: 270deg; --rotate-z: 45deg;"></div>
+        <div class="floating-object floating-cube" style="--size: 44px; --duration: 26s; --delay: 7s; --float-y: -25px; --float-x: 15px; --float-x-alt: 25px; --float-y-alt: 25px; --rotate-x: 180deg; --rotate-y: 360deg; --rotate-z: 180deg;"></div>
+        <div class="floating-object floating-sphere" style="--size: 38px; --duration: 22s; --delay: 9s; --float-y: -35px; --float-x: -25px; --float-x-alt: 35px; --float-y-alt: 35px; --rotate-x: 180deg; --rotate-y: 90deg; --rotate-z: 45deg;"></div>
+        <div class="floating-object floating-tetrahedron" style="--size: 42px; --duration: 28s; --delay: 11s; --float-y: -30px; --float-x: 22px; --float-x-alt: 30px; --float-y-alt: 30px; --rotate-x: 360deg; --rotate-y: 180deg; --rotate-z: 90deg;"></div>
+        <div class="floating-object floating-cube" style="--size: 48px; --duration: 23s; --delay: 13s; --float-y: -40px; --float-x: -15px; --float-x-alt: 40px; --float-y-alt: 40px; --rotate-x: 270deg; --rotate-y: 360deg; --rotate-z: 45deg;"></div>
+        <div class="floating-object floating-sphere" style="--size: 35px; --duration: 25s; --delay: 15s; --float-y: -22px; --float-x: 18px; --float-x-alt: 22px; --float-y-alt: 22px; --rotate-x: 180deg; --rotate-y: 270deg; --rotate-z: 90deg;"></div>
+        <div class="dust-particle" style="--duration: 22s; --delay: 2s; --drift: 35px;"></div>
+        <div class="dust-particle" style="--duration: 28s; --delay: 4s; --drift: -25px;"></div>
+        <div class="dust-particle" style="--duration: 24s; --delay: 6s; --drift: 40px;"></div>
+        <div class="dust-particle" style="--duration: 26s; --delay: 8s; --drift: -30px;"></div>
+        <div class="dust-particle" style="--duration: 23s; --delay: 10s; --drift: 45px;"></div>
+        <div class="dust-particle" style="--duration: 27s; --delay: 12s; --drift: -35px;"></div>
+        <div class="cyber-grid"></div>
         <div class="section-header">
             <h2>Education & <span class="highlight">Experience</span></h2>
             <div class="underline"></div>
@@ -233,165 +311,151 @@
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="timeline-date">2022 - Present</div>
+                <div class="timeline-date">02/2025 - Present</div>
                 <div class="timeline-content">
-                    <h3>Senior Full Stack Developer</h3>
-                    <h4>Tech Innovations Inc.</h4>
-                    <p>Leading a team of developers to create scalable web applications using React, Node.js, and AWS. Implemented CI/CD pipelines and microservices architecture.</p>
+                    <h3>Software Development</h3>
+                    <h4>Power Learning Project</h4>
+                    <p>Specializing in Python programming, MySQL database management, and building dynamic projects also enhancing your skills in software engineering, entrepreneurship, and personal development to drive tech innovation.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="timeline-date">2019 - 2022</div>
+                <div class="timeline-date">2021 - Present</div>
                 <div class="timeline-content">
-                    <h3>Web Developer</h3>
-                    <h4>Digital Solutions Group</h4>
-                    <p>Developed responsive websites and e-commerce platforms. Optimized site performance and implemented SEO best practices.</p>
+                    <h3>BSc. Electronics and Computer Engineering</h3>
+                    <h4>Jomo Kenyatta University of Agriculture and Technology</h4>
+                    <p>Specializing in designing and developing integrated electronic systems that combine hardware and software components, with a focus on circuit design, microprocessors, and embedded systems.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="timeline-date">2017 - 2019</div>
+                <div class="timeline-date">05/2024 - 08/2024</div>
                 <div class="timeline-content">
-                    <h3>Master's in Computer Science</h3>
-                    <h4>University of Technology</h4>
-                    <p>Specialized in Web Technologies and Cloud Computing. Thesis on "Optimizing Performance in Single Page Applications".</p>
+                    <h3>Electronics Engineering Attachee</h3>
+                    <h4>Kenya Airports Authority (Jomo Kenyatta International Airport)</h4>
+                    <p>Assisted in the installation and configuration of surveillance and image processing systems, hands-on experience in the calibration and testing of aviation electronics equipment, Baggage Handling System.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="timeline-date">2013 - 2017</div>
+                <div class="timeline-date">06/2023 - 08/2023</div>
                 <div class="timeline-content">
-                    <h3>Bachelor's in Software Engineering</h3>
-                    <h4>State University</h4>
-                    <p>Foundation in programming principles, data structures, and software development methodologies.</p>
+                    <h3>Wind Energy Engineering Attachee</h3>
+                    <h4>KENGEN Ngong' Wind Farm</h4>
+                    <p>Collaborated with senior engineers in the maintenance and repair of wind turbines, regular inspections and troubleshooting of electrical control systems.</p>
                 </div>
             </div>
         </div>
         <div class="cv-download">
-            <a href="#" class="btn primary-btn">
+            <a href="Assets/Tech-enthusiast-Leon-Boma-CV.pdf" download class="btn primary-btn">
                 <i class="fas fa-download"></i> Download CV
             </a>
         </div>
     </section>
 
     <section id="projects" class="projects">
+        <div class="floating-object floating-cube" style="--size: 53px; --duration: 26s; --delay: 4s; --float-y: -22px; --float-x: 14px; --float-x-alt: 22px; --float-y-alt: 22px; --rotate-x: 180deg; --rotate-y: 360deg; --rotate-z: 180deg;"></div>
+        <div class="floating-object floating-sphere" style="--size: 47px; --duration: 22s; --delay: 6s; --float-y: -38px; --float-x: -16px; --float-x-alt: 38px; --float-y-alt: 38px; --rotate-x: 270deg; --rotate-y: 90deg; --rotate-z: 45deg;"></div>
+        <div class="floating-object floating-tetrahedron" style="--size: 49px; --duration: 24s; --delay: 8s; --float-y: -30px; --float-x: 18px; --float-x-alt: 30px; --float-y-alt: 30px; --rotate-x: 360deg; --rotate-y: 180deg; --rotate-z: 90deg;"></div>
+        <div class="floating-object floating-cube" style="--size: 45px; --duration: 28s; --delay: 10s; --float-y: -35px; --float-x: -20px; --float-x-alt: 35px; --float-y-alt: 35px; --rotate-x: 180deg; --rotate-y: 270deg; --rotate-z: 45deg;"></div>
+        <div class="floating-object floating-sphere" style="--size: 41px; --duration: 25s; --delay: 12s; --float-y: -28px; --float-x: 16px; --float-x-alt: 28px; --float-y-alt: 28px; --rotate-x: 270deg; --rotate-y: 360deg; --rotate-z: 180deg;"></div>
+        <div class="floating-object floating-tetrahedron" style="--size: 50px; --duration: 27s; --delay: 14s; --float-y: -32px; --float-x: -22px; --float-x-alt: 32px; --float-y-alt: 32px; --rotate-x: 360deg; --rotate-y: 90deg; --rotate-z: 45deg;"></div>
+        <div class="floating-object floating-cube" style="--size: 44px; --duration: 23s; --delay: 16s; --float-y: -25px; --float-x: 20px; --float-x-alt: 25px; --float-y-alt: 25px; --rotate-x: 180deg; --rotate-y: 360deg; --rotate-z: 90deg;"></div>
+        <div class="dust-particle" style="--duration: 28s; --delay: 3s; --drift: -25px;"></div>
+        <div class="dust-particle" style="--duration: 24s; --delay: 5s; --drift: 30px;"></div>
+        <div class="dust-particle" style="--duration: 26s; --delay: 7s; --drift: -35px;"></div>
+        <div class="dust-particle" style="--duration: 22s; --delay: 9s; --drift: 40px;"></div>
+        <div class="dust-particle" style="--duration: 27s; --delay: 11s; --drift: -30px;"></div>
+        <div class="dust-particle" style="--duration: 25s; --delay: 13s; --drift: 45px;"></div>
+        <div class="cyber-grid"></div>
         <div class="section-header">
             <h2>My <span class="highlight">Projects</span></h2>
             <div class="underline"></div>
         </div>
-        <div class="project-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web Apps</button>
-            <button class="filter-btn" data-filter="mobile">Mobile</button>
-            <button class="filter-btn" data-filter="design">UI/UX</button>
-        </div>
         <div class="project-grid">
-            <div class="project-card" data-category="web">
+            <div class="project-card">
+                <div class="project-status in-progress">Coming soon</div>
                 <div class="project-img">
-                    <img src="/api/placeholder/400/300" alt="E-commerce Platform">
+                    <img src="Assets/Majestic-motors-Pic-1.png" alt="Car CMS with AI">
                 </div>
                 <div class="project-info">
-                    <h3>E-commerce Platform</h3>
-                    <p>A full-featured online shopping platform with secure payment processing and inventory management.</p>
+                    <h3>Car CMS with AI Image Recognition</h3>
+                    <p>A content management system for car dealerships that uses AI to scan and analyze car images, automatically extracting and displaying detailed information about the vehicle.</p>
+                    <div class="project-status-details">
+                        <h4>Project Status</h4>
+                        <ul>
+                            <li class="completed">Project planning and architecture</li>
+                            <li class="in-progress">Frontend UI development</li>
+                            <li class="in-progress">AI image recognition integration</li>
+                            <li class="planned">Database implementation</li>
+                            <li class="planned">User authentication system</li>
+                        </ul>
+                    </div>
                     <div class="project-tech">
                         <span>React</span>
                         <span>Node.js</span>
+                        <span>TensorFlow.js</span>
                         <span>MongoDB</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        <span class="project-link"><i class="fas fa-info-circle"></i> Project in development</span>
                     </div>
                 </div>
             </div>
-            <div class="project-card" data-category="mobile">
+            <div class="project-card">
+                <div class="project-status in-progress">In Progress</div>
                 <div class="project-img">
-                    <img src="/api/placeholder/400/300" alt="Fitness Tracker App">
+                    <img src="Assets/3D-Website-CodeBucks-Pic-1.png" alt="Portfolio Website">
                 </div>
                 <div class="project-info">
-                    <h3>Fitness Tracker App</h3>
-                    <p>A mobile application for tracking workouts, nutrition, and fitness goals with visualization dashboards.</p>
+                    <h3>Portfolio Website</h3>
+                    <p>A modern, responsive portfolio website showcasing my skills, projects, and professional experience with interactive elements and 3D effects.</p>
+                    <div class="project-status-details">
+                        <h4>Project Status</h4>
+                        <ul>
+                            <li class="completed">HTML structure</li>
+                            <li class="completed">CSS styling and animations</li>
+                            <li class="in-progress">Content optimization</li>
+                            <li class="planned">Performance improvements</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-link"><i class="fas fa-info-circle"></i> Project in development</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-status in-progress">In Progress</div>
+                <div class="project-img">
+                    <img src="Assets/Car-Maintenance-app.jpg" alt="AI Car Maintenance Assistant">
+                </div>
+                <div class="project-info">
+                    <h3>AI Car Maintenance Assistant</h3>
+                    <p>A mobile application that uses computer vision to diagnose car issues from photos, provides maintenance schedules, and connects users with nearby mechanics.</p>
+                    <div class="project-status-details">
+                        <h4>Project Status</h4>
+                        <ul>
+                            <li class="completed">Project planning</li>
+                            <li class="completed">UI/UX design</li>
+                            <li class="in-progress">Mobile app development</li>
+                            <li class="in-progress">AI model integration</li>
+                            <li class="planned">Mechanic network integration</li>
+                            <li class="planned">Payment system</li>
+                        </ul>
+                    </div>
                     <div class="project-tech">
                         <span>React Native</span>
+                        <span>TensorFlow Lite</span>
                         <span>Firebase</span>
-                        <span>Redux</span>
+                        <span>Node.js</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> App Store</a>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card" data-category="design">
-                <div class="project-img">
-                    <img src="/api/placeholder/400/300" alt="Travel Blog Design">
-                </div>
-                <div class="project-info">
-                    <h3>Travel Blog Design</h3>
-                    <p>A responsive design system for a travel blog with custom illustrations and typography.</p>
-                    <div class="project-tech">
-                        <span>Figma</span>
-                        <span>Illustrator</span>
-                        <span>CSS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Design</a>
-                        <a href="#" class="project-link"><i class="fab fa-behance"></i> Behance</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card" data-category="web">
-                <div class="project-img">
-                    <img src="/api/placeholder/400/300" alt="Task Management System">
-                </div>
-                <div class="project-info">
-                    <h3>Task Management System</h3>
-                    <p>A collaborative project management tool with real-time updates and team communication features.</p>
-                    <div class="project-tech">
-                        <span>Vue.js</span>
-                        <span>Express</span>
-                        <span>Socket.io</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card" data-category="mobile">
-                <div class="project-img">
-                    <img src="/api/placeholder/400/300" alt="Weather App">
-                </div>
-                <div class="project-info">
-                    <h3>Weather App</h3>
-                    <p>A location-based weather forecast application with interactive maps and severe weather alerts.</p>
-                    <div class="project-tech">
-                        <span>Flutter</span>
-                        <span>Dart</span>
-                        <span>Weather API</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Play Store</a>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card" data-category="design">
-                <div class="project-img">
-                    <img src="/api/placeholder/400/300" alt="Banking Dashboard">
-                </div>
-                <div class="project-info">
-                    <h3>Banking Dashboard</h3>
-                    <p>A user-centered interface design for a digital banking platform focusing on accessibility and security.</p>
-                    <div class="project-tech">
-                        <span>Adobe XD</span>
-                        <span>Sketch</span>
-                        <span>Principle</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Case Study</a>
-                        <a href="#" class="project-link"><i class="fab fa-dribbble"></i> Dribbble</a>
+                        <span class="project-link"><i class="fas fa-info-circle"></i> Project in development</span>
                     </div>
                 </div>
             </div>
@@ -399,6 +463,20 @@
     </section>
 
     <section id="contact" class="contact">
+        <div class="floating-object floating-tetrahedron" style="--size: 51px; --duration: 23s; --delay: 5s; --float-y: -26px; --float-x: 13px; --float-x-alt: 26px; --float-y-alt: 26px; --rotate-x: 360deg; --rotate-y: 180deg; --rotate-z: 90deg;"></div>
+        <div class="floating-object floating-cube" style="--size: 49px; --duration: 19s; --delay: 7s; --float-y: -34px; --float-x: -17px; --float-x-alt: 34px; --float-y-alt: 34px; --rotate-x: 270deg; --rotate-y: 360deg; --rotate-z: 45deg;"></div>
+        <div class="floating-object floating-sphere" style="--size: 45px; --duration: 25s; --delay: 9s; --float-y: -28px; --float-x: 16px; --float-x-alt: 28px; --float-y-alt: 28px; --rotate-x: 180deg; --rotate-y: 270deg; --rotate-z: 180deg;"></div>
+        <div class="floating-object floating-tetrahedron" style="--size: 47px; --duration: 27s; --delay: 11s; --float-y: -32px; --float-x: -19px; --float-x-alt: 32px; --float-y-alt: 32px; --rotate-x: 360deg; --rotate-y: 90deg; --rotate-z: 45deg;"></div>
+        <div class="floating-object floating-cube" style="--size: 43px; --duration: 21s; --delay: 13s; --float-y: -30px; --float-x: 15px; --float-x-alt: 30px; --float-y-alt: 30px; --rotate-x: 180deg; --rotate-y: 360deg; --rotate-z: 90deg;"></div>
+        <div class="floating-object floating-sphere" style="--size: 48px; --duration: 24s; --delay: 15s; --float-y: -38px; --float-x: -21px; --float-x-alt: 38px; --float-y-alt: 38px; --rotate-x: 270deg; --rotate-y: 180deg; --rotate-z: 45deg;"></div>
+        <div class="floating-object floating-tetrahedron" style="--size: 42px; --duration: 26s; --delay: 17s; --float-y: -24px; --float-x: 19px; --float-x-alt: 24px; --float-y-alt: 24px; --rotate-x: 360deg; --rotate-y: 270deg; --rotate-z: 90deg;"></div>
+        <div class="dust-particle" style="--duration: 24s; --delay: 4s; --drift: 30px;"></div>
+        <div class="dust-particle" style="--duration: 26s; --delay: 6s; --drift: -35px;"></div>
+        <div class="dust-particle" style="--duration: 22s; --delay: 8s; --drift: 40px;"></div>
+        <div class="dust-particle" style="--duration: 28s; --delay: 10s; --drift: -30px;"></div>
+        <div class="dust-particle" style="--duration: 25s; --delay: 12s; --drift: 45px;"></div>
+        <div class="dust-particle" style="--duration: 23s; --delay: 14s; --drift: -40px;"></div>
+        <div class="cyber-grid"></div>
         <div class="section-header">
             <h2>Get In <span class="highlight">Touch</span></h2>
             <div class="underline"></div>
@@ -410,41 +488,40 @@
                 <div class="contact-details">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>john.doe@example.com</span>
+                        <span>leonard383boma@gmail.com</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span>+1 (555) 123-4567</span>
+                        <span>+254 755 962 921</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>San Francisco, CA</span>
+                        <span>Nairobi, Kenya</span>
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/Tweenwrld" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/leonard-boma-631aa9234/?originalSubdomain=ke" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/Tweenhaven35" target="_blank" class="social-link"><i class="fab fa-x"></i></a>
                 </div>
             </div>
             <div class="contact-form">
-                <form>
+                <form action="https://formspree.io/f/your-form-id" method="POST">
                     <div class="form-group">
                         <label for="name">Your Name</label>
-                        <input type="text" id="name" placeholder="Enter your name" required>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Your Email</label>
-                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" id="subject" placeholder="Enter subject">
+                        <input type="text" id="subject" name="subject" placeholder="Enter subject">
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" rows="6" placeholder="Enter your message" required></textarea>
+                        <textarea id="message" name="message" rows="6" placeholder="Enter your message" required></textarea>
                     </div>
                     <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
                 </form>
@@ -466,8 +543,8 @@
         </div>
     </footer>
 
-    <div class="back-to-top">
+    <a href="#home" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
-    </div>
+    </a>
 </body>
 </html>
