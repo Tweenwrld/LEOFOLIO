@@ -10,7 +10,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and profe
 - 🖼️ Project showcase with image galleries
 - 📝 Skills and experience timeline
 - 📬 Contact form
-- 🌓 Light/Dark theme support
+- 🌓 Dark theme support
 - ♿ Accessibility features
 
 ## Technologies Used
